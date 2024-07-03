@@ -1,0 +1,310 @@
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+.navbar-brand h2 {
+    font-family: "Yellowtail", cursive;
+}
+
+footer {
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --red: #e52647;
+    --gray: #9e9e9e;
+    --lightgray: #696969;
+    --white: #fff;
+    --black: #000;
+}
+
+.greybg {
+    background: var(--gray);
+}
+
+.txtgrey {
+    color: var(--gray);
+}
+
+.txtred {
+    color: var(--red);
+}
+
+.small-caps {
+    font-variant: small-caps;
+}
+
+i:hover {
+    color: var(--red) !important;
+}
+
+.top-section {
+    background: url('images/Layer_one.png') no-repeat;
+    background-size: cover;
+}
+
+.active {
+    color: var(--red) !important;
+    text-decoration: none !important;
+}
+
+.nav-link:hover {
+    color: var(--red) !important;
+}
+
+#menu {
+    background: rgba(87, 87, 87, 0.712);
+    backdrop-filter: blur(5px);
+}
+
+.dance h2 {
+    font-size: 80px;
+}
+
+.dance-dots .owl-dots .owl-dot span {
+    outline: 2px solid var(--white);
+    outline-offset: 4px;
+    transform: scale(0.8);
+    transition: 0.6s all;
+}
+
+.dance-dots .owl-dots .owl-dot.active span {
+    background: var(--red);
+    outline: 2px solid var(--red);
+}
+
+.dance-dots .owl-dots .owl-dot span:hover {
+    background: var(--red);
+    outline: 2px solid var(--red);
+}
+
+.btn {
+    background: var(--red) !important;
+}
+
+.btn:hover {
+    box-shadow: 0 4px 2px var(--lightgray);
+}
+
+.btn:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 1px var(--lightgray);
+}
+
+.card {
+    background: var(--gray);
+    height: 454px;
+    transition: 1.5s;
+}
+
+.bg-1 {
+    background: #9e9e9ebd;
+}
+
+.bg-2 {
+    background: #9e9e9e82;
+}
+
+.bg-3 {
+    background: #9e9e9e36;
+}
+
+.card .blank::after {
+    content: "";
+    height: 4px;
+    width: 80px;
+    margin: auto;
+    background-color: var(--black);
+}
+
+.hover-card:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 50px solid #9e9e9e;
+    border-right: 50px solid transparent;
+}
+
+.card-body {
+    bottom: -101%;
+    position: absolute;
+    transition: 0.6s;
+}
+
+.card:hover .card-body {
+    bottom: 0;
+    height: 46%;
+    color: var(--gray);
+}
+
+.card:hover {
+    background: var(--red);
+
+}
+
+.card:hover .blank {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(22%) hue-rotate(63deg) brightness(100%) contrast(107%);
+}
+
+.card:hover .blank {
+    transform: translateY(-80px);
+    transition: 0.6s;
+}
+
+.card:hover h3 {
+    transform: translateY(-80px);
+    transition: 0.6s;
+    color: var(--white) !important;
+}
+
+.dance-hight {
+    height: 500px;
+    border-color: var(--red) !important;
+}
+
+.dance-details {
+    height: 420px;
+}
+
+.dance-details div {
+    width: 450px;
+}
+
+#studioslider .owl-item.active,
+#studioslider .owl-item {
+    display: flex;
+    justify-content: center;
+}
+
+#studioslider .owl-nav .owl-next {
+    position: absolute;
+    width: 70px;
+    top: 41%;
+    right: 17%;
+    z-index: 1;
+}
+
+#studioslider .owl-nav .owl-prev {
+    position: absolute;
+    width: 70px;
+    top: 41%;
+    left: 17%;
+    z-index: 1;
+}
+
+#studioslider .owl-nav {
+    margin: 0;
+}
+
+#studioslider .owl-nav button {
+    background: none !important;
+}
+
+.user-profile {
+    background: url('images/Layer_five.png') no-repeat center;
+    background-size: cover;
+    color: var(--red);
+}
+
+.events-first {
+    background: url('images/ballet_545321.png') no-repeat center;
+    background-size: cover;
+}
+
+.events-second {
+    background: url('images/balle_545645.png') no-repeat center;
+    background-size: cover;
+}
+
+.events-third {
+    background: url('images/people.png') no-repeat center;
+    background-size: cover;
+}
+
+.second:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 80px solid var(--lightgray);
+    border-right: 150px solid transparent;
+}
+
+.first {
+    transform: rotate(27deg);
+    cursor: pointer;
+    left: 1%;
+    bottom: 6%;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    opacity: 0;
+    transition: 0.9s;
+}
+
+.second {
+    opacity: 0;
+    transition: 0.9s;
+}
+
+.read:hover .second {
+    opacity: 1;
+}
+
+.read:hover .first {
+    opacity: 1;
+}
+
+::placeholder {
+    color: var(--white) !important;
+    opacity: 0.5 !important;
+    font-size: small;
+}
+
+
+@media screen and (max-width: 968px) {
+    .navbar-brand img {
+        height: 65px;
+    }
+
+    .navbar-brand h2 {
+        font-size: 19px !important;
+    }
+
+    .dance h2 {
+        font-size: 35px;
+    }
+
+    .dance p {
+        font-size: 18px !important;
+    }
+
+    .dance {
+        margin: 0 !important;
+    }
+
+    .dance-details {
+        height: 100%;
+    }
+
+    .dance-details div {
+        width: 100%;
+    }
+
+    #three .owl-nav .owl-next {
+        top: 37%;
+        right: 9%;
+    }
+
+    #three .owl-nav .owl-prev {
+        top: 37%;
+        left: 9%;
+    }
+
+    address {
+        padding-top: 40px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
